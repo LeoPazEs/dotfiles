@@ -30,10 +30,15 @@ xdg-user-dirs
 zsh  
 ohmyzsh - plugins=(git poetry zsh-syntax-highlighting zsh-autosuggestions)  
 fastfetch  
+openssh  
+yay  
 powerlevel10k  
-kitty  
-nvim  
 pyenv  
 nvm  
+docker  
+docker-compose  
+## Desktop enviroment
 hyprland  
+kitty  
+ttf-meslo-nerd-font-powerlevel10k  
 
