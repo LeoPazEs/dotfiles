@@ -39,7 +39,7 @@ nvm
 docker  
 docker-compose  
 ## Desktop environment
---  Dynamic tiling Wayland composito
+--  Dynamic tiling Wayland compositor  
 hyprland  
 -- Terminal emulator  
 kitty  
