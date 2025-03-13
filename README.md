@@ -44,10 +44,12 @@ kitty
 ttf-meslo-nerd-font-powerlevel10k  
 greetd  
 greetd-tuigreet  
--- Musts from Hyprland
+-- Musts from Hyprland !!! CHECK THE DOCS !!
 swaync  
 pipewire  
 wiredplumber  
 xdg-desktop-portal-hyprland  
 hyprpolkitagent  
+qt5-wayland  
+qt6-wayland  
 
