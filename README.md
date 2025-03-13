@@ -20,7 +20,6 @@ Base packages: base linux linux-firmware sof-firmware base-devel grub efibootmgr
 ## Users  
 Create user and add it in the wheel group: useradd -m -G wheel -s /bin/bash {usenarme}  
 Enable wheel group to execute any command: EDITOR=vim visudo  
-## Starting packages  
 Network: systemctl enable NetworkManager  
 ## Bootloader  
 Grub: grub-install /dev/sda  
@@ -48,7 +47,7 @@ ttf-meslo-nerd-font-powerlevel10k
 -- Login  
 greetd  
 greetd-tuigreet  
--- Musts from Hyprland !!! CHECK THE DOCS !!
+-- Musts from Hyprland !!! CHECK THE DOCS !!  
 swaync  
 pipewire  
 wiredplumber  
