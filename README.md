@@ -49,4 +49,5 @@ swaync
 pipewire  
 wiredplumber  
 xdg-desktop-portal-hyprland  
+hyprpolkitagent  
 
