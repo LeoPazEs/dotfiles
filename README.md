@@ -55,9 +55,9 @@ xdg-desktop-portal-hyprland
 hyprpolkitagent  
 qt5-wayland  
 qt6-wayland   
--- Application Launcher
+-- Application Launcher  
 wofi  
--- Browser
+-- Browser  
 firefox  
 
 
