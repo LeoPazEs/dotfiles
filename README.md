@@ -38,10 +38,14 @@ pyenv
 nvm  
 docker  
 docker-compose  
-## Desktop enviroment
+## Desktop environment
+--  Dynamic tiling Wayland composito
 hyprland  
+-- Terminal emulator  
 kitty  
+-- Font for p10k  
 ttf-meslo-nerd-font-powerlevel10k  
+-- Login  
 greetd  
 greetd-tuigreet  
 -- Musts from Hyprland !!! CHECK THE DOCS !!
@@ -52,5 +56,5 @@ xdg-desktop-portal-hyprland
 hyprpolkitagent  
 qt5-wayland  
 qt6-wayland  
-firefox  
+firefox   
 
