@@ -41,5 +41,6 @@ docker-compose
 hyprland  
 kitty  
 ttf-meslo-nerd-font-powerlevel10k  
-plasma-desktop: pipewire-jack ffmpeg noto-fonts   
+plasma-desktop: pipewire-jack ffmpeg noto-fonts 
+sddm: enable sddm.service
 
