@@ -44,4 +44,6 @@ ttf-meslo-nerd-font-powerlevel10k
 greetd  
 greetd-tuigreet    
 swaync  
+pipewire  
+wiredplumber  
 
