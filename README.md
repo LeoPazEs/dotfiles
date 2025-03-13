@@ -41,5 +41,6 @@ docker-compose
 hyprland  
 kitty  
 ttf-meslo-nerd-font-powerlevel10k  
-plasma-desktop pipewire-jack ffmpeg noto-fonts   
+plasma-desktop: pipewire-jack ffmpeg noto-fonts   
+kde-applications-meta: pyside6 cronie tesseract-data-eng # You can install the specific meta packages but i dont know which ones are needed yet  
 
