@@ -82,6 +82,7 @@ Se estiver no Ubuntu:
 - `nvm`
 - `docker`
 - `docker-compose`
+- `unzip`
 - `nvim`
 
 ---
