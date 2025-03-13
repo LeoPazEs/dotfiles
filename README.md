@@ -25,6 +25,12 @@ Se estiver no Ubuntu:
 
 ---
 
+## Rofi
+- Configuração baseada no repositório [rofi-collection](https://github.com/Murzchnvok/rofi-collection) tokyonight. 
+
+
+---
+
 # Arch Linux
 
 ## Sistema
