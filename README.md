@@ -116,6 +116,7 @@ Se estiver no Ubuntu:
 
 ### Lançador de aplicativos
 - `wofi`
+- `papirus-icon-theme`
 
 ### Navegador
 - `firefox`
