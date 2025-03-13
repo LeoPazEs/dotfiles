@@ -71,7 +71,6 @@ Se estiver no Ubuntu:
 - `oh-my-zsh` (Plugins: `git`, `poetry`, `zsh-syntax-highlighting`, `zsh-autosuggestions`)
 - `fastfetch`
 - `openssh`
-- `yay`
 - `powerlevel10k`
 - `pyenv`
 - `nvm`
@@ -87,6 +86,9 @@ Se estiver no Ubuntu:
 
 ### Emulador de terminal
 - `kitty`
+
+### AUR Helper
+- `yay`
 
 ### Fonte para o Powerlevel10k
 - `ttf-meslo-nerd-font-powerlevel10k`
