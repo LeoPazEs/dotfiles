@@ -42,5 +42,6 @@ hyprland
 kitty  
 ttf-meslo-nerd-font-powerlevel10k  
 greetd  
-greetd-tuigreet  
+greetd-tuigreet    
+swaync  
 
