@@ -41,5 +41,5 @@ docker-compose
 hyprland  
 kitty  
 ttf-meslo-nerd-font-powerlevel10k  
-gtk3  
+plasma-desktop pipewire-jack ffmpeg noto-fonts   
 
