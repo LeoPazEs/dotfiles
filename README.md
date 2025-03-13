@@ -37,7 +37,7 @@ Se estiver no Ubuntu:
 - **Ferramenta de particionamento**: `cfdisk`
 - **Pacotes base:**
   ```sh
-  pacman -S base linux linux-firmware sof-firmware base-devel grub efibootmgr vim networkmanager {cpu}-ucode
+  pacstrap -K base linux linux-firmware sof-firmware base-devel grub efibootmgr vim networkmanager {cpu}-ucode
   ```
 
 ## Usuários
