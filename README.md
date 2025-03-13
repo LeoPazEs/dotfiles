@@ -1,5 +1,6 @@
 # dotfiles
-Symlink the folders into ~/.config
+Symlink the folders into ~/.config  
+!!! REMEMBER TO CHECK THE DOC FROM THE PACKAGES AND ARCH !!!  
 
 ## Kitty
 If on ubuntu use blur my shell to blur kitty  
@@ -42,8 +43,10 @@ hyprland
 kitty  
 ttf-meslo-nerd-font-powerlevel10k  
 greetd  
-greetd-tuigreet    
+greetd-tuigreet  
+-- Musts from Hyprland
 swaync  
 pipewire  
 wiredplumber  
+xdg-desktop-portal-hyprland  
 
