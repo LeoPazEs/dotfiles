@@ -124,4 +124,7 @@ Se estiver no Ubuntu:
 - `pipewire-pulse`
 - `pavucontrol`
 
+### Wallpaper
+- `hyprpaper`
+
 
