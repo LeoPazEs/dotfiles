@@ -128,6 +128,9 @@ Se estiver no Ubuntu:
 ### Wallpaper
 - `hyprpaper`
 
+### File manager
+- `dolphin`
+
 ### Sociais
 - `discord`
 - `spotify`
