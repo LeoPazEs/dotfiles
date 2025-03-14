@@ -128,7 +128,8 @@ Se estiver no Ubuntu:
 ### Wallpaper
 - `hyprpaper`
 
-### Discord
+### Sociais
 - `discord`
+- `spotify`
 
 
