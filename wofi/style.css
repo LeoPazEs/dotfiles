@@ -1,0 +1,60 @@
+/* General Window Styles */
+window {
+  margin: 0px;
+  border: 1px solid #7aa2f7; /* Lighter blue accent color */
+  background-color: #1f1f2e; /* Dark background */
+}
+
+/* Input Styles */
+#input {
+  margin: 5px;
+  border: none;
+  color: #e0e0e0; /* Light gray text */
+  background-color: #3b4261; /* Darker background for input */
+}
+
+/* Inner Box Styles */
+#inner-box {
+  margin: 5px;
+  border: none;
+  background-color: #1f1f2e; /* Same as the window background */
+}
+
+/* Outer Box Styles */
+#outer-box {
+  margin: 5px;
+  border: none;
+  background-color: #1f1f2e; /* Same as the window background */
+}
+
+/* Scrollbar Styles */
+#scroll {
+  margin: 0px;
+  border: none;
+}
+
+/* Text Styles */
+#text {
+  margin: 5px;
+  border: none;
+  color: #e0e0e0; /* Light gray text */
+}
+
+#entry.activatable #text {
+  color: #f7768e; /* Pink accent for activatable entry */
+}
+
+/* Entry Styles */
+#entry > * {
+  color: #e0e0e0; /* Light gray text */
+}
+
+#entry:selected {
+  background-color: #3b4261; /* Darker background on selection */
+}
+
+#entry:selected #text {
+  font-weight: bold;
+  color: #7aa2f7; /* Blue color for selected text */
+}
+
