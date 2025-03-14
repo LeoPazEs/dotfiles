@@ -128,4 +128,7 @@ Se estiver no Ubuntu:
 ### Wallpaper
 - `hyprpaper`
 
+### Discord
+- `discord`
+
 
