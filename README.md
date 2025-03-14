@@ -120,4 +120,8 @@ Se estiver no Ubuntu:
 ### Navegador
 - `firefox`
 
+### Audio
+- `pipewire-pulse`
+- `pavucontrol`
+
 
