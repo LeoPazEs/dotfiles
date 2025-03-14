@@ -119,6 +119,7 @@ Se estiver no Ubuntu:
 
 ### Navegador
 - `firefox`
+- `libnotify`
 
 ### Audio
 - `pipewire-pulse`
