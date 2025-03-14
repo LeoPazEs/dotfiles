@@ -15,7 +15,7 @@ Se estiver no Ubuntu:
   ```sh
   gsettings set org.gnome.desktop.default-applications.terminal exec 'kitty'
   ```
-- Fonte utilizada: `UbuntuMono Nerd Font Mono`
+- Fonte utilizada: `Meslo NF`
 
 ---
 
@@ -25,8 +25,8 @@ Se estiver no Ubuntu:
 
 ---
 
-## Rofi
-- Configuração baseada no repositório [rofi-collection](https://github.com/Murzchnvok/rofi-collection) tokyonight. 
+## Wofi
+- Configuração baseada no repositório [wofi](https://github.com/joao-vitor-sr/wofi-themes-collection). 
 
 
 ---
