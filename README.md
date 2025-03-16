@@ -132,6 +132,7 @@ Se estiver no Ubuntu:
 
 ### File manager
 - `thunar`
+- `gvfs`
 
 ### Theme
 #### GTK
