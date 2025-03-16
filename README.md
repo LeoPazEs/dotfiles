@@ -131,6 +131,14 @@ Se estiver no Ubuntu:
 ### File manager
 - `dolphin`
 
+### Theme
+#### GTK
+- `nwg-look`
+#### QT
+- `kvantum`
+- `arc-gtk-theme`
+
+
 ### Sociais
 - `discord`
 - `spotify`
