@@ -84,6 +84,7 @@ Se estiver no Ubuntu:
 - `docker-compose`
 - `unzip`
 - `nvim`
+- `ripgrep`
 
 ---
 
