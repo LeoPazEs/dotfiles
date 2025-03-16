@@ -117,6 +117,7 @@ Se estiver no Ubuntu:
 
 ### Lançador de aplicativos
 - `wofi`
+- `sudo ln -sf /usr/bin/kitty /usr/bin/xterm` Faz os arquivos .desktop acharem que o kitty é o terminal=true  
 
 ### Navegador
 - `firefox`
@@ -138,7 +139,6 @@ Se estiver no Ubuntu:
 #### QT
 - `kvantum`
 - `yay tokyonight-gtk-theme-git`
-
 
 ### Sociais
 - `discord`
