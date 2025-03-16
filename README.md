@@ -129,14 +129,14 @@ Se estiver no Ubuntu:
 - `hyprpaper`
 
 ### File manager
-- `dolphin`
+- `thunar`
 
 ### Theme
 #### GTK
 - `nwg-look`
 #### QT
 - `kvantum`
-- `arc-gtk-theme`
+- `yay tokyonight-gtk-theme-git`
 
 
 ### Sociais
