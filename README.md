@@ -15,7 +15,7 @@ Se estiver no Ubuntu:
   ```sh
   gsettings set org.gnome.desktop.default-applications.terminal exec 'kitty'
   ```
-- Fonte utilizada: `Meslo NF`
+- Fonte utilizada: `MesloLGS NF`
 
 ---
 
@@ -143,6 +143,11 @@ Se estiver no Ubuntu:
 - `yay tokyonight-gtk-theme-git`
 #### QT
 - `QGtk3Style`
+
+### Status Bar
+- `waybar` see hyprland module
+- `otf-font-awesome`
+- `network-manager-applet`
 
 ### Sociais
 - `discord`
