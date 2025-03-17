@@ -115,6 +115,9 @@ Se estiver no Ubuntu:
 - `qt5-wayland`
 - `qt6-wayland`
 
+### Clipboard
+- `cliphist`
+
 ### Lançador de aplicativos
 - `wofi`
 - `sudo ln -sf /usr/bin/kitty /usr/bin/xterm` Faz os arquivos .desktop acharem que o kitty é o terminal=true  
