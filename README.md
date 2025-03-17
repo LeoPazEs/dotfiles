@@ -137,9 +137,9 @@ Se estiver no Ubuntu:
 ### Theme
 #### GTK
 - `nwg-look`
-#### QT
-- `kvantum`
 - `yay tokyonight-gtk-theme-git`
+#### QT
+- `QGtk3Style`
 
 ### Sociais
 - `discord`
