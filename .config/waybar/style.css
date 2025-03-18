@@ -25,8 +25,9 @@ window#waybar {
 }
 
 .modules-center {
-    padding: 0 10px;
+    margin: 5px 10px;
 }
+
 
 #clock,
 #battery,
@@ -45,6 +46,12 @@ window#waybar {
 #scratchpad,
 #power-profiles-daemon,
 #language,
+#group-power,
+#custom-power,
+#custom-reboot,
+#custom-suspend,
+#custom-lock,
+#custom-quit,
 #mpd {
     padding: 0 10px;
     border-radius: 15px;
@@ -67,6 +74,11 @@ window#waybar {
 #scratchpad:hover,
 #power-profiles-daemon:hover,
 #language:hover,
+#custom-power:hover,
+#custom-reboot:hover,
+#custom-suspend:hover,
+#custom-lock:hover,
+#custom-quit:hover,
 #mpd:hover {
     background: rgba(26, 27, 38, 0.9); /* Slightly darker hover effect */
 }
@@ -101,4 +113,5 @@ window#waybar {
 #custom-arch:hover {
     color: #1793d1; /* Vibrant blue on hover */
 }
+
 

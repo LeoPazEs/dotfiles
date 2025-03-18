@@ -158,3 +158,4 @@ Se estiver no Ubuntu:
 
 ### Idle
 - `hypridle`
+- `brightnessctl`
