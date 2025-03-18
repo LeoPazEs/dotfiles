@@ -155,3 +155,6 @@ Se estiver no Ubuntu:
 
 ### Lock Screen
 - `hyprlock`
+
+### Idle
+- `hypridle`
