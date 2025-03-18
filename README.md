@@ -137,20 +137,21 @@ Se estiver no Ubuntu:
 - `thunar`
 - `gvfs`
 
-### Theme
+### Tema 
 #### GTK
 - `nwg-look`
 - `yay tokyonight-gtk-theme-git`
 #### QT
 - `QGtk3Style`
 
-### Status Bar
-- `waybar` see hyprland module
+### Status Bar [SimpleBlueColorWaybar](https://github.com/d00m1k/SimpleBlueColorWaybar). 
+- `waybar` hyprland module
 - `otf-font-awesome`
 - `network-manager-applet`
 
-### Sociais
-- `discord`
-- `spotify`
+### Screenshot
+- `grim` FAQ hyprland
+- `slurp`
 
-
+### Lock Screen
+- `hyprlock`
