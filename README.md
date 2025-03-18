@@ -85,6 +85,9 @@ Se estiver no Ubuntu:
 - `unzip`
 - `nvim`
 - `ripgrep`
+#### Fonte para o Powerlevel10k
+- `ttf-meslo-nerd-font-powerlevel10k`
+- `noto-fonts-emoji`
 
 ---
 
@@ -99,8 +102,6 @@ Se estiver no Ubuntu:
 ### AUR Helper
 - `yay`
 
-### Fonte para o Powerlevel10k
-- `ttf-meslo-nerd-font-powerlevel10k`
 
 ### Gerenciador de session
 - `greetd`
