@@ -18,7 +18,6 @@
         "cpu",
         "memory",
         "temperature",
-        "hyprland/language",
         "battery",
         "clock",
         "group/group-power"
