@@ -13,7 +13,7 @@ window#waybar {
 .modules-left,
 .modules-center,
 .modules-right {
-    background: rgba(26, 27, 38, 0.8); /* Dark background for the modules */
+    background: rgba(26, 27, 38, 0.5); /* Dark background for the modules */
     margin: 5px 10px;
     padding: 0 5px;
     border-radius: 15px;
@@ -24,6 +24,7 @@ window#waybar {
 }
 
 .modules-center {
+    background: rgba(26, 27, 38, 0.5); /* Dark background for the modules */
     margin: 5px 10px;
 }
 
@@ -38,7 +39,6 @@ window#waybar {
 #network,
 #pulseaudio,
 #wireplumber,
-#custom-media,
 #tray,
 #mode,
 #idle_inhibitor,
@@ -66,7 +66,6 @@ window#waybar {
 #network:hover,
 #pulseaudio:hover,
 #wireplumber:hover,
-#custom-media:hover,
 #tray:hover,
 #mode:hover,
 #idle_inhibitor:hover,
@@ -79,26 +78,20 @@ window#waybar {
 #custom-lock:hover,
 #custom-quit:hover,
 #mpd:hover {
-    background: rgba(26, 27, 38, 0.9); /* Slightly darker hover effect */
+    background: rgba(26, 27, 38, 1); /* Slightly darker hover effect */
 }
 
 #workspaces button {
-  background: transparent;
-  font-family: MesloLGS NF Regular;
-  font-weight: 900;
-  font-size: 13pt;
-  color: #c0caf5; /* Light color for text */
-  border: none;
   border-radius: 15px;
 }
 
 #workspaces button.active {
-    background: #2a2a3f; /* Darker active background */
+    background: #2a2a3f;
 }
 
 #workspaces button:hover {
-  background: #1f1f2a; /* Darker hover background */
-  color: #cdd6f4; /* Slightly lighter text */
+  background: rgba(26, 27, 38, 1);
+  color: #cdd6f4;
   box-shadow: none;
 }
 
