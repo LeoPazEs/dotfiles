@@ -167,3 +167,6 @@ Se estiver no Ubuntu:
 - `bluez`
 - `bluez-utils`
 - `bluetui`
+
+### System Monitoring
+- `htop`
