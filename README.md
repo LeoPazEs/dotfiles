@@ -116,6 +116,9 @@ Se estiver no Ubuntu:
 - `qt5-wayland`
 - `qt6-wayland`
 
+### Xorg apps
+- `xorg-xwayland`
+
 ### Clipboard
 - `cliphist`
 
