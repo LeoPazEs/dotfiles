@@ -34,7 +34,7 @@ return {
         'TelescopePromptTitle',
         'TelescopePromptBorder',
       },
-      extra_groups = { 'NormalFloat' },
+      extra_groups = { 'NormalFloat', 'NvimTreeNormal' },
       exclude_groups = {},
     }
     require('transparent').clear_prefix 'NvimTree'
