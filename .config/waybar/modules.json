@@ -25,18 +25,18 @@
     "pulseaudio": {
         "format": "{icon}  {volume}%",
         "format-bluetooth": "{icon} {volume}%  {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format-bluetooth-muted": "󰝟 {icon}  {format_source}",
+        "format-muted": "󰝟 {format_source}",
         "format-source": " {volume}%",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "hands-free": "",
+            "headset": "",
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": ["", "󰕾"]
         },
         "on-click": "pavucontrol"
     },
@@ -66,6 +66,7 @@
     "hyprland/language": {
        "format": "  {}",
        "format-en": "EN",
+       "format-pt": "PT",
        "format-ru": "RU"
     },
     "battery": {
@@ -79,9 +80,6 @@
         "format-plugged": "  {capacity}%",
         "format-alt": "{time}  {icon}",
         "format-icons": ["", "", "", "", ""]
-    },
-    "battery#bat2": {
-        "bat": "BAT2"
     },
     "clock": {
         "format": "{:%H:%M | %e %B} ",

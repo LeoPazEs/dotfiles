@@ -86,6 +86,7 @@ Se estiver no Ubuntu:
 - `nvim`
 - `ripgrep`
 #### Fonte para o Powerlevel10k
+- `noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra`
 - `ttf-meslo-nerd-font-powerlevel10k`
 - `noto-fonts-emoji`
 
@@ -149,6 +150,7 @@ Se estiver no Ubuntu:
 - `waybar` hyprland module
 - `otf-font-awesome`
 - `network-manager-applet`
+- `xbindkeys`
 
 ### Screenshot
 - `grim` FAQ hyprland
