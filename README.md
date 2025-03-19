@@ -161,3 +161,8 @@ Se estiver no Ubuntu:
 ### Idle
 - `hypridle`
 - `brightnessctl`
+
+### Bluetooth
+- `bluez`
+- `bluez-utils`
+- `bluetui`
