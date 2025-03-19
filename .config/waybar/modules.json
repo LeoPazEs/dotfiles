@@ -24,8 +24,8 @@
     },
     "pulseaudio": {
         "format": "{icon}  {volume}%",
-        "format-bluetooth": "{icon} {volume}%  {format_source}",
-        "format-bluetooth-muted": "󰝟 {icon}  {format_source}",
+        "format-bluetooth": " {volume}%   {format_source}",
+        "format-bluetooth-muted": "  󰝟  {format_source}",
         "format-muted": "󰝟 {format_source}",
         "format-source": " {volume}%",
         "format-source-muted": "",
@@ -46,7 +46,7 @@
         "tooltip-format": "󰈀 {ifname} via {gwaddr}",
         "format-linked": "󰈀 {ifname} (No IP)",
         "format-disconnected": "Disconnected ⚠",
-	"on-click": "nm-connection-editor"
+	"on-click": "nmtui"
     },
     "cpu": {
         "format": "  {usage}%",
