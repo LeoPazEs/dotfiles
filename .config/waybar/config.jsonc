@@ -2,11 +2,7 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-<<<<<<< HEAD
     "spacing": 0,
-=======
-    "spacing": 0, // Gaps between modules (4px)
->>>>>>> main
     "modules-left": [
         "custom/arch",
         "hyprland/workspaces"
