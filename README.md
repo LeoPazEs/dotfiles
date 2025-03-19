@@ -115,6 +115,7 @@ Se estiver no Ubuntu:
 - `hyprpolkitagent`
 - `qt5-wayland`
 - `qt6-wayland`
+- `xdg-desktop-portal-gtk`
 
 ### Xorg apps
 - `xorg-xwayland`

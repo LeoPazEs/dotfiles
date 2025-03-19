@@ -51,6 +51,7 @@ window#waybar {
 #custom-suspend,
 #custom-lock,
 #custom-quit,
+#custom-bluetooth,
 #mpd {
     padding: 0 10px;
     border-radius: 15px;
@@ -77,6 +78,7 @@ window#waybar {
 #custom-suspend:hover,
 #custom-lock:hover,
 #custom-quit:hover,
+#custom-bluetooth:hover,
 #mpd:hover {
     background: rgba(26, 27, 38, 1); /* Slightly darker hover effect */
 }
