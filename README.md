@@ -118,6 +118,7 @@ Se estiver no Ubuntu:
 
 ### Xorg apps
 - `xorg-xwayland`
+- Sometimes making GDK_BACKEND=x11 in env for app solves the problem
 
 ### Clipboard
 - `cliphist`
