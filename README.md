@@ -141,7 +141,7 @@ Se estiver no Ubuntu:
 ### Tema 
 #### GTK
 - `nwg-look`
-- `yay tokyonight-gtk-theme-git`
+- `Arc-Dark`
 #### QT
 - `QGtk3Style`
 

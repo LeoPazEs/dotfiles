@@ -1,60 +1,75 @@
-/* General Window Styles */
 window {
-  margin: 0px;
-  border: 1px solid #7aa2f7; /* Lighter blue accent color */
-  background-color: #1f1f2e; /* Dark background */
+    margin: 0px;
+    border: 5px solid #1e1e2e;
+    background-color: #cdd6f4;
+    border-radius: 0px;
 }
 
-/* Input Styles */
 #input {
-  margin: 5px;
-  border: none;
-  color: #e0e0e0; /* Light gray text */
-  background-color: #3b4261; /* Darker background for input */
+    padding: 4px;
+    margin: 4px;
+    padding-left: 20px;
+    border: none;
+    color: #cdd6f4;
+    font-weight: bold;
+    background-color: #1e1e2e;
+   	outline: none;
+    border-radius: 15px;
+    margin: 10px;
+    margin-bottom: 2px;
+}
+#input:focus {
+    border: 0px solid #1e1e2e;
+    margin-bottom: 0px;
 }
 
-/* Inner Box Styles */
 #inner-box {
-  margin: 5px;
-  border: none;
-  background-color: #1f1f2e; /* Same as the window background */
+    margin: 4px;
+    border: 10px solid #1e1e2e;
+    color: #cdd6f4;
+    font-weight: bold;
+    background-color: #1e1e2e;
+    border-radius: 15px;
 }
 
-/* Outer Box Styles */
 #outer-box {
-  margin: 5px;
-  border: none;
-  background-color: #1f1f2e; /* Same as the window background */
+    margin: 0px;
+    border: none;
+    border-radius: 15px;
+    background-color: #1e1e2e;
 }
 
-/* Scrollbar Styles */
 #scroll {
-  margin: 0px;
-  border: none;
+    margin-top: 5px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    /* background: rgb(255,255,255); */
 }
 
-/* Text Styles */
-#text {
-  margin: 5px;
-  border: none;
-  color: #e0e0e0; /* Light gray text */
+#img:selected {
+    background-color: #89b4fa;
+    border-radius: 15px;
 }
 
-#entry.activatable #text {
-  color: #f7768e; /* Pink accent for activatable entry */
+#text:selected {
+    color: #cdd6f4;
+    margin: 0px 0px;
+    border: none;
+    border-radius: 15px;
+    background-color: #89b4fa;
 }
 
-/* Entry Styles */
-#entry > * {
-  color: #e0e0e0; /* Light gray text */
+#entry {
+    margin: 0px 0px;
+    border: none;
+    border-radius: 15px;
+    background-color: transparent;
 }
 
 #entry:selected {
-  background-color: #3b4261; /* Darker background on selection */
+    margin: 0px 0px;
+    border: none;
+    border-radius: 15px;
+    background-color: #89b4fa;
 }
-
-#entry:selected #text {
-  font-weight: bold;
-  color: #7aa2f7; /* Blue color for selected text */
-}
-
