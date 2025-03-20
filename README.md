@@ -125,8 +125,9 @@ Se estiver no Ubuntu:
 - `cliphist`
 
 ### Lançador de aplicativos
-- `wofi`
+- `rofi-wayland`
 - `sudo ln -sf /usr/bin/kitty /usr/bin/xterm` Faz os arquivos .desktop acharem que o kitty é o terminal=true  
+- `papirus-icon-theme`
 
 ### Audio
 - `pipewire-pulse`
