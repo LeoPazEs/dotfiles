@@ -79,7 +79,7 @@ Se estiver no Ubuntu:
 - `openssh`
 - `powerlevel10k`
 - `pyenv`
-- `nvm`
+- `fnm`
 - `docker`
 - `docker-compose`
 - `unzip`

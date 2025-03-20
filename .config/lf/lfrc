@@ -1,1 +1,2 @@
 set icons true
+map . set hidden!

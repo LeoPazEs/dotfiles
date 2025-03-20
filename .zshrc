@@ -82,10 +82,18 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv virtualenv-init -)"
 
-# NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# FNM
+FNM_PATH="/home/leopazes/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/leopazes/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
+
+# lf
+LFCD="$HOME/.config/lf/lfcd.sh"
+if [ -f "$LFCD" ]; then
+    source "$LFCD"
+fi
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
