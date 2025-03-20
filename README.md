@@ -138,6 +138,7 @@ Se estiver no Ubuntu:
 ### File manager
 - `thunar`
 - `gvfs`
+- `lf`
 
 ### Tema 
 #### GTK
