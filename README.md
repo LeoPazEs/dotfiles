@@ -79,6 +79,8 @@ Se estiver no Ubuntu:
 - `unzip`
 - `nvim`
 - `ripgrep`
+- `python-pipx`
+
 #### Fonte para o Powerlevel10k
 - `noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra`
 - `ttf-meslo-nerd-font-powerlevel10k`
