@@ -25,12 +25,6 @@ Se estiver no Ubuntu:
 
 ---
 
-## Wofi
-- Configuração baseada no repositório [wofi](https://github.com/joao-vitor-sr/wofi-themes-collection). 
-
-
----
-
 # Arch Linux
 
 ## Sistema
@@ -153,6 +147,7 @@ Se estiver no Ubuntu:
 - `otf-font-awesome`
 - `network-manager-applet`
 - `xbindkeys`
+- `power-profiles-daemon`
 
 ### Screenshot
 - `grim` FAQ hyprland

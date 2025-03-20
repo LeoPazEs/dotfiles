@@ -19,6 +19,7 @@
         "memory",
         "temperature",
         "battery",
+        "power-profiles-daemon",
         "clock",
         "group/group-power"
     ],
