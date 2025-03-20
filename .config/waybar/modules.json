@@ -93,8 +93,8 @@
       }
     },
     "clock": {
-        "format": "{:%H:%M | %e %B} ",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%H:%M}",
+        "tooltip-format": "<big>{:%Y %B %e}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
     "group/group-power": {
