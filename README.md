@@ -140,6 +140,7 @@ Se estiver no Ubuntu:
 - `vlc`
 - `poppler`
 - `ffmpegthumbnailer`
+- `fzf` and ripgrep if not installed
 
 ### Tema 
 #### GTK
