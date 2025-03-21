@@ -13,7 +13,8 @@
         "clock",
         //"hyprland/window",
         "temperature",
-        "battery"
+        //"battery",
+        "upower"
     ],
     "modules-right": [
         //"idle_inhibitor",

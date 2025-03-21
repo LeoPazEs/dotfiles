@@ -28,6 +28,7 @@ window#waybar {
 
 #clock,
 #battery,
+#upower,
 #cpu,
 #memory,
 #disk,
@@ -56,6 +57,7 @@ window#waybar {
 
 #clock:hover,
 #battery:hover,
+#upower:hover,
 #cpu:hover,
 #memory:hover,
 #disk:hover,

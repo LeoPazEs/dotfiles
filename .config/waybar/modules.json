@@ -81,13 +81,20 @@
         "format-alt": "{time}  {icon}",
         "format-icons": ["", "", "", "", ""]
     },
+    "upower": {
+         "icon-size": 15,
+         "hide-if-empty": true,
+         "tooltip": true,
+         "tooltip-spacing": 15,
+         "format" : " {percentage}"
+    },
     "power-profiles-daemon": {
       "format": "{icon}",
       "tooltip-format": "Power profile: {profile}nDriver: {driver}",
       "tooltip": true,
       "format-icons": {
         "default": "",
-        "performance": "",
+        "performance": "󱐋",
         "balanced": "",
         "power-saver": ""
       }
