@@ -136,6 +136,10 @@ Se estiver no Ubuntu:
 - `thunar`
 - `gvfs`
 - `lf`
+- `yay ctpv-git`
+- `vlc`
+- `poppler`
+- `ffmpegthumbnailer`
 
 ### Tema 
 #### GTK
