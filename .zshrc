@@ -1,6 +1,3 @@
-if [ $SHLVL -eq 1 ]; then
-    fastfetch
-fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -78,6 +75,11 @@ plugins=(git poetry zsh-syntax-highlighting zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+# Fastfetch
+if [ $SHLVL -eq 1 ]; then
+    fastfetch
+fi
 
 # PYENV
 export PATH="$HOME/.pyenv/bin:$PATH"

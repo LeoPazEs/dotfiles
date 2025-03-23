@@ -1,4 +1,3 @@
-map . set hidden!
 map c copy
 map y clear
 map d delete
