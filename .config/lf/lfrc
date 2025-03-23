@@ -1,4 +1,8 @@
 map . set hidden!
+map c copy
+map y clear
+map d delete
+map x cut
 
 cmd fzf_search ${{
     cmd="rg --column --line-number --no-heading --color=always --smart-case"
