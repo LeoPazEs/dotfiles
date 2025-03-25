@@ -135,6 +135,8 @@ Se estiver no Ubuntu:
 ### File manager
 - `thunar`
 - `gvfs`
+- `viewnior` image GUI viewer
+#### Terminal
 - `lf`
 - `yay ctpv-git`
 - `vlc`
