@@ -13,8 +13,8 @@ window#waybar {
 .modules-left,
 .modules-center,
 .modules-right {
-    background: rgba(26, 27, 38, 0.8); /* Dark background for the modules */
-    margin: 5px 10px;
+    background: rgba(38, 43, 52, 0.8); /* Dark background for the modules */
+    margin: 0px 10px;
     padding: 0 5px;
     border-radius: 15px;
 }
@@ -79,7 +79,8 @@ window#waybar {
 #custom-quit:hover,
 #custom-bluetooth:hover,
 #mpd:hover {
-    background: rgba(26, 27, 38, 1); /* Slightly darker hover effect */
+    background: rgba(82, 148, 226, 0.8); /* Slightly darker hover effect */
+    color: rgba(0, 0, 0, 1);
 }
 
 #workspaces button {
@@ -87,13 +88,13 @@ window#waybar {
 }
 
 #workspaces button.active {
-    background: #2a2a3f;
+    background: rgba(82, 148, 226, 0.8);
+    color: rgba(0, 0, 0, 1);
 }
 
 #workspaces button:hover {
-  background: rgba(26, 27, 38, 1);
-  color: #cdd6f4;
-  box-shadow: none;
+  background: rgba(82, 148, 226, 0.8);
+  color: rgba(0, 0, 0, 1);
 }
 
 #custom-arch {
