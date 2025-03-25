@@ -14,7 +14,7 @@ window#waybar {
 .modules-center,
 .modules-right {
     background: rgba(38, 43, 52, 0.8); /* Dark background for the modules */
-    margin: 0px 10px;
+    margin: 5px 10px;
     padding: 0 5px;
     border-radius: 15px;
 }
@@ -95,6 +95,7 @@ window#waybar {
 #workspaces button:hover {
   background: rgba(82, 148, 226, 0.8);
   color: rgba(0, 0, 0, 1);
+  box-shadow: none;
 }
 
 #custom-arch {
