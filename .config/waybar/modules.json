@@ -1,6 +1,5 @@
-{
-    "custom/arch": {
-        "format": "󰣇",
+{ 
+    "custom/arch": { "format": "󰣇",
         "tooltip": true,
         "tooltip-format": "btw"
     },
@@ -8,11 +7,20 @@
         "disable-scroll": true,
         "all-outputs": true,
         "warp-on-scroll": false,
-        "format": "{name}",
-        "format-icons": {
-            "urgent": "",
-            "active": "",
-            "default": ""
+        "show-special" : true,
+        "format": "{name} {windows}",
+        "format-window-separator": " ",
+        "window-rewrite-default": "",
+        "window-rewrite": {
+            "class<google-chrome> ": "",
+            "title<.*whatsapp.*>": "",
+            "title<.*youtube.*>": "",
+            "class<spotify>": "",
+            "class<kitty>": "",
+            "class<kitty> title<lf.*>": "󰉓",
+            "class<kitty> title<*nvim.*>": "",
+            "class<LibreOffice.*>": "",
+            "class<Thunar.*>": "󰉓",
         }
     },
     "idle_inhibitor": {
@@ -21,7 +29,7 @@
             "activated": "",
             "deactivated": ""
         }
-    },
+    }, 
     "pulseaudio": {
         "format": "{icon}  {volume}%  {format_source}",
         "format-bluetooth": "{volume}%   {format_source}",

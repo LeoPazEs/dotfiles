@@ -83,7 +83,7 @@ Se estiver no Ubuntu:
 
 #### Fonte para o Powerlevel10k
 - `noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra`
-- `yay ttf-meslo-nerd-font-powerlevel10k`
+- `ttf-meslo-nerd`
 
 ---
 
