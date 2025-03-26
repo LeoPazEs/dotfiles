@@ -17,9 +17,9 @@ map a make
 
 cmd trash %{{
     set -f
-    printf "Are you sure you want to trash '%s'? (y/n): " "$fx"
+    printf "Are you sure you want to trash ? (y/n): "
     read confirm
-    if [[ "$confirm" =~ ^[Yy]$ ]]; then
+    if [[ "$confirm" =~ ^[Yy]$ ]] || [[ "$confirm" = "" ]]; then
         if command -v gio >/dev/null 2>&1; then
             gio trash $fx
     	else
