@@ -1,12 +1,12 @@
 * {
-    font-family: "MesloLGS Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Noto Sans Mono", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 15px;
     transition: background-color .3s ease-out;
 }
 
 window#waybar {
     background:  rgba(0, 0, 0, 0);
-    font-family: MesloLGS Nerd Font;
+    font-family: Noto Sans Mono;
     transition: background-color .5s;
 }
 

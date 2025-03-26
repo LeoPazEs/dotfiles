@@ -10,17 +10,17 @@
         "show-special" : true,
         "format": "{name} {windows}",
         "format-window-separator": " ",
-        "window-rewrite-default": "",
+        "window-rewrite-default": " ",
         "window-rewrite": {
-            "class<google-chrome> ": "",
-            "title<.*whatsapp.*>": "",
-            "title<.*youtube.*>": "",
-            "class<spotify>": "",
-            "class<kitty>": "",
-            "class<kitty> title<lf.*>": "󰉓",
-            "class<kitty> title<*nvim.*>": "",
-            "class<LibreOffice.*>": "",
-            "class<Thunar.*>": "󰉓",
+            "class<google-chrome> ": " ",
+            "title<.*whatsapp.*>": " ",
+            "title<.*youtube.*>": " ",
+            "class<spotify>": " ",
+            "class<kitty>": " ",
+            "class<kitty> title<lf.*>": "󰉓 ",
+            "class<kitty> title<*nvim.*>": " ",
+            "class<LibreOffice.*>": " ",
+            "class<Thunar.*>": "󰉓 ",
         }
     },
     "idle_inhibitor": {
@@ -31,8 +31,8 @@
         }
     }, 
     "pulseaudio": {
-        "format": "{icon}  {volume}%  {format_source}",
-        "format-bluetooth": "{volume}%   {format_source}",
+        "format": "{icon} {volume}% {format_source}",
+        "format-bluetooth": "{volume}% {format_source}",
         "format-bluetooth-muted": "󰝟  {format_source}",
         "format-muted": "󰝟 {format_source}",
         "format-source": " {volume}%",
@@ -49,8 +49,8 @@
         "on-click": "pavucontrol"
     },
     "network": {
-        "format-wifi": "   {essid} ({signalStrength}%)",
-        "format-ethernet": "󰈀 {bandwidthUpBits} 󰕒   {bandwidthDownBits} 󰇚",
+        "format-wifi": "  {essid} ({signalStrength}%)",
+        "format-ethernet": "󰈀 {bandwidthUpBits} 󰕒 {bandwidthDownBits} 󰇚",
         "tooltip-format": "󰈀 {ifname} via {gwaddr}",
         "format-linked": "󰈀 {ifname} (No IP)",
         "format-disconnected": "Disconnected ⚠",
@@ -82,11 +82,11 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon}  {capacity}%",
-        "format-full": "{icon}  {capacity}%",
-        "format-charging": "  {capacity}%",
-        "format-plugged": "  {capacity}%",
-        "format-alt": "{time}  {icon}",
+        "format": "{icon} {capacity}%",
+        "format-full": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
         "format-icons": ["", "", "", "", ""]
     },
     "upower": {
@@ -98,7 +98,7 @@
     },
     "power-profiles-daemon": {
       "format": "{icon}",
-      "tooltip-format": "Power profile: {profile}nDriver: {driver}",
+      "tooltip-format": "Power profile: {profile} Driver: {driver}",
       "tooltip": true,
       "format-icons": {
         "default": "",
