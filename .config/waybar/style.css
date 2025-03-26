@@ -85,6 +85,7 @@ window#waybar {
 
 #workspaces button {
   border-radius: 15px;
+  margin-right: 5px;
 }
 
 #workspaces button.active {
