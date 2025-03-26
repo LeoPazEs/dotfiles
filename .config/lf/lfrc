@@ -1,7 +1,39 @@
 map c copy
 map y clear
-map d delete
 map x cut
+
+cmd make %{{
+    printf "Enter name: "
+    read name
+    if [[ "$name" == */ ]]; then
+        mkdir -p "${name%/}"  # Remove trailing slash and create a directory
+    elif [[ "$name" == *.* ]]; then
+        touch "$name"  # If it contains a dot, create a file
+    else
+        echo "Invalid input. Use 'name/' for directories or 'name.ext' for files."
+    fi
+}}
+map a make
+
+cmd trash ${{
+    set -f
+    if gio trash 2>/dev/null; then
+        gio trash $fx
+    else
+        mkdir -p ~/.trash
+        mv -- $fx ~/.trash
+    fi
+}}
+map d trash
+
+cmd trash-restore %{{
+    set -f
+    ft="$(basename -a -- $fx | sed 's|^|trash:///|')"
+    gio trash --restore $ft
+    printf 'restored'
+    printf ' %s' $(basename -a -- $fx)
+}}
+
 
 cmd fzf_search ${{
     cmd="rg --column --line-number --no-heading --color=always --smart-case"
@@ -30,6 +62,7 @@ cmd fzf_jump ${{
     fi
 }}
 map sf :fzf_jump
+
 
 set icons true
 set sixel true
