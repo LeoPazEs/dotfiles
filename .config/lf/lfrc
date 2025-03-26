@@ -15,13 +15,17 @@ cmd make %{{
 }}
 map a make
 
-cmd trash ${{
+cmd trash %{{
     set -f
-    if gio trash 2>/dev/null; then
-        gio trash $fx
-    else
-        mkdir -p ~/.trash
-        mv -- $fx ~/.trash
+    printf "Are you sure you want to trash '%s'? (y/n): " "$fx"
+    read confirm
+    if [[ "$confirm" =~ ^[Yy]$ ]]; then
+        if command -v gio >/dev/null 2>&1; then
+            gio trash $fx
+    	else
+            mkdir -p ~/.trash
+            mv -- $fx ~/.trash
+        fi
     fi
 }}
 map d trash
