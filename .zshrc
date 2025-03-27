@@ -98,7 +98,7 @@ LFCD="$HOME/.config/lf/lfcd.sh"
 if [ -f "$LFCD" ]; then
     source "$LFCD"
 fi
-bindkey -s '^o' 'lfcd\n'  # zsh
+bindkey -s '^e' 'lfcd\n'  # zsh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
