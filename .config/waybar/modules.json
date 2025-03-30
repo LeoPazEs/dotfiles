@@ -23,6 +23,8 @@
             "class<kitty> title<*nvim.*>": " ",
             "class<LibreOffice.*>": " ",
             "class<Thunar.*>": "󰉓 ",
+            "class<Discord.*>": " ",
+
         }
     },
     "idle_inhibitor": {
