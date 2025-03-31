@@ -79,6 +79,7 @@ Se estiver no Ubuntu:
 - `unzip`
 - `nvim`
 - `ripgrep`
+- `lazygit`
 - `python-pipx`
 
 #### Fonte para o Powerlevel10k
