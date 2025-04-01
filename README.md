@@ -150,7 +150,8 @@ Se estiver no Ubuntu:
 - `nwg-look`
 - `Arc-Dark`
 #### QT
-- `QGtk3Style`
+- `kvantum`
+- `kvantum-qt5`
 
 ### Status Bar [SimpleBlueColorWaybar](https://github.com/d00m1k/SimpleBlueColorWaybar). 
 - `waybar` hyprland module
