@@ -1,3 +1,2 @@
-// Thunar Terminal open here
-// Cannot be a symlink
+// Thunar Terminal open here, Cannot be a symlink and you have to remove the comments!!!!!!!!!.
 TerminalEmulator=kitty
