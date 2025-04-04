@@ -2,10 +2,10 @@
 /* Author: Newman Sanchez (https://github.com/newmanls) */
 
 * {
-    bg0:    #2A2E32;
+    bg0:    #1A1B26;
     bg1:    #3B4252;
     bg2:    #404552;
-    bg3:    #1793d1;
+    bg3:    #7AA2F7;
     fg0:    #D3DAE3;
     fg1:    #FFFFFF;
     fg2:    #D3DAE3;
