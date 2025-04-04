@@ -39,6 +39,10 @@ Se estiver no Ubuntu:
   `mkdir -p /mnt/home`  
   `mount -o subvol=@home /dev/{root_partition} /mnt/home`
   `mount /dev/{efi_partition} /mnt/efi`
+  - Automaticamente adicionar no GRUB quando tirar um snapshot:
+    `sudo systemctl edit --full grub-btrfsd` setar para o timeshift.
+    `sudo systemctl enable grub-btrfsd`
+  
 - **Pacotes base:**
   ```sh
   pacstrap -K /mnt base linux linux-firmware sof-firmware base-devel grub efibootmgr grub-btrfs btrfs-progs inotify-tools timeshift vim networkmanager {cpu}-ucode
