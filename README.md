@@ -187,3 +187,6 @@ Se estiver no Ubuntu:
 
 ### System Monitoring
 - `htop`
+
+### Output Management
+- `nwg-displays`
