@@ -158,7 +158,7 @@ Se estiver no Ubuntu:
 ### Tema 
 #### GTK
 - `nwg-look`
-- `breeze-gtk` Dark  
+- [Tokyonight-GTK-Theme-Dark](https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme) 
 #### QT
 - `QT_QPA_PLATFORMTHEME=gtk3` 
 
