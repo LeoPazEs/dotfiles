@@ -158,10 +158,11 @@ Se estiver no Ubuntu:
 ### Tema 
 #### GTK
 - `nwg-look`
-- `Arc-Dark`
+- `breeze-gtk` Dark  
 #### QT
 - `kvantum`
 - `kvantum-qt5`
+- `kvkonqi`
 
 ### Status Bar [SimpleBlueColorWaybar](https://github.com/d00m1k/SimpleBlueColorWaybar). 
 - `waybar` hyprland module
