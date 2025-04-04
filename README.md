@@ -29,7 +29,7 @@ Se estiver no Ubuntu:
 
 ## Sistema
 - **Ferramenta de particionamento**: `cfdisk`
-- **Btrfs**  
+- **[Btrfs](https://gist.github.com/mjkstra/96ce7a5689d753e7a6bdd92cdc169bae)**  
   `mkfs.btrfs /dev/{root_partition}`
   `mount /dev/{root_partition} /mnt`  
   `btrfs subvolume create /mnt/@`  
