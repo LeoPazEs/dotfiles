@@ -92,7 +92,7 @@ Se estiver no Ubuntu:
 - `lazygit`
 - `python-pipx`
 
-#### Fonte para o Powerlevel10k
+#### Fontes
 - `noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra`
 - `nerd-fonts` ttf-noto-nerd
 
@@ -117,7 +117,7 @@ Se estiver no Ubuntu:
 ### Configurações essenciais para o Hyprland ⚠️ **Verifique a documentação!** ⚠️
 - `swaync`
 - `pipewire`
-- `wiredplumber`
+- `wireplumber`
 - `xdg-desktop-portal-hyprland`
 - `hyprpolkitagent`
 - `qt5-wayland`
