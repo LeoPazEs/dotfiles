@@ -160,9 +160,7 @@ Se estiver no Ubuntu:
 - `nwg-look`
 - `breeze-gtk` Dark  
 #### QT
-- `kvantum`
-- `kvantum-qt5`
-- `kvkonqi`
+- `QT_QPA_PLATFORMTHEME=gtk3` 
 
 ### Status Bar [SimpleBlueColorWaybar](https://github.com/d00m1k/SimpleBlueColorWaybar). 
 - `waybar` hyprland module
