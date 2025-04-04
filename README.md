@@ -29,9 +29,19 @@ Se estiver no Ubuntu:
 
 ## Sistema
 - **Ferramenta de particionamento**: `cfdisk`
+- **Btrfs**  
+  `mkfs.btrfs /dev/{root_partition}`
+  `mount /dev/{root_partition} /mnt`  
+  `btrfs subvolume create /mnt/@`  
+  `btrfs subvolume create /mnt/@home`  
+  `umount /mnt`  
+  `mount -o subvol=@ /dev/{root_partition} /mnt`  
+  `mkdir -p /mnt/home`  
+  `mount -o subvol=@home /dev/{root_partition} /mnt/home`
+  `mount /dev/{efi_partition} /mnt/efi`
 - **Pacotes base:**
   ```sh
-  pacstrap -K /mnt base linux linux-firmware sof-firmware base-devel grub efibootmgr vim networkmanager {cpu}-ucode
+  pacstrap -K /mnt base linux linux-firmware sof-firmware base-devel grub efibootmgr grub-btrfs btrfs-progs inotify-tools timeshift vim networkmanager {cpu}-ucode
   ```
 
 ## Usuários
@@ -43,7 +53,7 @@ Se estiver no Ubuntu:
   ```sh
   EDITOR=vim visudo
   ```
-- Habilitar o serviço de rede:
+- Habilitar o serviço de rede:mount /dev/nvme0n1p1 /mnt/efi
   ```sh
   systemctl enable NetworkManager
   ```
