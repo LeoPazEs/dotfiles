@@ -53,7 +53,7 @@ Se estiver no Ubuntu:
   ```sh
   EDITOR=vim visudo
   ```
-- Habilitar o serviço de rede:mount /dev/nvme0n1p1 /mnt/efi
+- Habilitar o serviço de rede:
   ```sh
   systemctl enable NetworkManager
   ```
