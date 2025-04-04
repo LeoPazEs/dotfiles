@@ -44,6 +44,22 @@ Se estiver no Ubuntu:
     `sudo systemctl enable grub-btrfsd`
   
 - **Pacotes base:**
+  ```bash
+  # base: Pacotes essenciais para inicializar o sistema Arch Linux.
+  # linux: Kernel padrão do Arch Linux. Use 'linux-lts' se preferir uma versão mais estável.
+  # linux-firmware: Firmwares de hardware para vários dispositivos, como Wi-Fi, Bluetooth etc.
+  # sof-firmware: Firmware para dispositivos de áudio suportados pelo Sound Open Firmware.
+  # base-devel: Conjunto de ferramentas de desenvolvimento base, como make e gcc.
+  # grub: Bootloader necessário para inicializar o sistema operacional.
+  # efibootmgr: Utilitário necessário para configurar o GRUB em sistemas EFI.
+  # grub-btrfs: Suporte a snapshots BTRFS no GRUB, permitindo inicializar diretamente de snapshots.
+  # btrfs-progs: Utilitários para gerenciar sistemas de arquivos BTRFS no espaço do usuário.
+  # inotify-tools: Utilitários que monitoram eventos de sistema de arquivos, usados pelo grub-btrfsd.
+  # timeshift: Ferramenta gráfica para criar, agendar e restaurar snapshots BTRFS.
+  # vim: Editor de texto. Caso não esteja familiarizado, use o nano.
+  # networkmanager: Gerenciador de conexões de rede com suporte para conexões cabeadas e Wi-Fi.
+  # {cpu}-ucode: Atualizações de microcódigo para a CPU. Use 'amd-ucode' para AMD ou 'intel-ucode' para Intel.
+  ```
   ```sh
   pacstrap -K /mnt base linux linux-firmware sof-firmware base-devel grub efibootmgr grub-btrfs btrfs-progs inotify-tools timeshift vim networkmanager {cpu}-ucode
   ```
