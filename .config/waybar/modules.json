@@ -25,7 +25,7 @@
             "title<.*youtube.*>": " ",
             "class<spotify>": " ",
             "class<kitty>": " ",
-            "class<kitty> title<lf.*>": "󰉓 ",
+            "class<kitty> title<yazi.*>": "󰉓 ",
             "class<kitty> title<*nvim.*>": " ",
             "class<LibreOffice.*>": " ",
             "class<Thunar.*>": "󰉓 ",
