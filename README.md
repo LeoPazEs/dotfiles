@@ -168,12 +168,8 @@ Se estiver no Ubuntu:
 - `gvfs`
 - `viewnior` image GUI viewer
 #### Terminal
-- `lf`
-- `yay ctpv-git`
-- `vlc`
-- `poppler`
-- `ffmpegthumbnailer`
-- `fzf` and ripgrep if not installed
+- `yazi`
+- [Tokyonight Theme](https://github.com/BennyOe/tokyo-night.yazi)
 
 ### Tema 
 #### GTK

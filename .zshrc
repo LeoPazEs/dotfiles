@@ -93,12 +93,16 @@ if [ -d "$FNM_PATH" ]; then
   eval "`fnm env`"
 fi
 
-# lf
-LFCD="$HOME/.config/lf/lfcd.sh"
-if [ -f "$LFCD" ]; then
-    source "$LFCD"
-fi
-bindkey -s '^e' 'lfcd\n'  # zsh
+# Yazy
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+bindkey -s '^e' 'y\n'
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
