@@ -1,7 +1,7 @@
 [manager]
 prepend_keymap = [
-	{ on = [ "s", "f" ], run = 'search fd --args="--hidden"' },
-	{ on = [ "s", "g" ], run = 'search rg --args="--hidden"' },
+	{ on = [ "s", "f" ], run = 'search fd --args="--hidden"', desc = "Search files"},
+	{ on = [ "s", "g" ], run = 'search rg --args="--hidden"', desc = "Search in files"},
 	{ on = "s", run = 'noop' },
 	{ on = "S", run = 'noop' },
 ]
