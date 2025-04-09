@@ -59,7 +59,8 @@
         "on-click": "uwsm app -- pavucontrol"
     },
     "tray": {
-            "spacing": 10
+            "spacing": 10,
+            "reverse-direction" : true
     },
     "network": {
         "format-wifi": "  {essid} ({signalStrength}%)",
@@ -82,7 +83,8 @@
 	"hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 100,
         "format-critical": " {temperatureC}",
-        "format": " {temperatureC}°C"
+        "format": " {temperatureC}°C",
+	"tooltip": true
     },
     "hyprland/language": {
        "format": "  {}",
