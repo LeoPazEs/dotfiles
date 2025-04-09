@@ -123,6 +123,16 @@ Se estiver no Ubuntu:
 ### Compositor Wayland dinâmico (Tiling Window Manager)
 - `hyprland`
 
+
+### Session Manager
+- `uwsm`
+#### After installing dependencies:
+- `systemctl --user enable --now hyprpaper.service`
+- `systemctl --user enable --now hypridle.service`
+- `systemctl --user enable --now waybar.service`
+- `systemctl --user enable --now hyprpolkitagent.service`
+
+
 ### Emulador de terminal
 - `kitty`
 
