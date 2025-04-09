@@ -56,7 +56,10 @@
             "car": "",
             "default": ["", "󰕾"]
         },
-        "on-click": "pavucontrol"
+        "on-click": "uwsm app -- pavucontrol"
+    },
+    "tray": {
+            "spacing": 10
     },
     "network": {
         "format-wifi": "  {essid} ({signalStrength}%)",
@@ -64,7 +67,7 @@
         "tooltip-format": "󰈀 {ifname} via {gwaddr}",
         "format-linked": "󰈀 {ifname} (No IP)",
         "format-disconnected": "Disconnected ⚠",
-	"on-click": "kitty nmtui"
+	"on-click": "uwsm app -- kitty nmtui"
     },
     "cpu": {
         "format": "  {usage}%",
@@ -140,12 +143,12 @@
     "custom/quit": {
         "format": "󰗼",
         "tooltip": false,
-        "on-click": "hyprctl dispatch exit"
+        "on-click": "uwsm stop"
     },
     "custom/lock": {
         "format": "󰍁",
         "tooltip": false,
-        "on-click": "hyprlock"
+        "on-click": "uwsm app -- hyprlock"
     },
     "custom/suspend": {
         "format": "󰒲",
@@ -163,8 +166,9 @@
         "on-click": "shutdown now"
     },
     "custom/bluetooth": {
+        "exec": "~/.config/waybar/scripts/bluetooth.sh",
         "format": "",
         "tooltip": false,
-        "on-click": "kitty bluetui"
+        "on-click": "uwsm app -- kitty bluetui"
     }
 }
