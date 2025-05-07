@@ -212,7 +212,7 @@ Se estiver no Ubuntu:
 - `bluetui`
 
 ### System Monitoring
-- `htop`
+- `btop`
 
 ### Output Management
 - `nwg-displays`
