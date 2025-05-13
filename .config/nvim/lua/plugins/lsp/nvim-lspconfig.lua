@@ -123,6 +123,7 @@ return { -- LSP Configuration & Plugins
     end
 
     local servers = {
+      rust_analyzer = {},
       cucumber_language_server = {},
       gopls = { settings = { gopls = { completeUnimported = true, usePlaceholders = true, analyses = { unusedparams = true } } } },
       clangd = {},
@@ -171,6 +172,7 @@ return { -- LSP Configuration & Plugins
     -- for you, so that they are available from within Neovim.
     local ensure_installed = vim.tbl_keys(servers or {})
     vim.list_extend(ensure_installed, {
+      'rust-analyzer',
       -- C, C++
       'clangd',
       -- Golang
