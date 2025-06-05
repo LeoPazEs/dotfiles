@@ -55,11 +55,11 @@ return { -- Fuzzy Finder (files, lsp, etc)
       -- },
       pickers = {
         find_files = {
-          file_ignore_patterns = { 'node_modules', '.git', '.venv' },
+          file_ignore_patterns = { 'node_modules', '.git/', '.venv' },
           hidden = true,
         },
         live_grep = {
-          file_ignore_patterns = { 'node_modules', '.git', '.venv' },
+          file_ignore_patterns = { 'node_modules', '.git/', '.venv' },
           additional_args = function(_)
             return { '--hidden' }
           end,

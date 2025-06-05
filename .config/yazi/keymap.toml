@@ -1,4 +1,4 @@
-[manager]
+[mgr]
 prepend_keymap = [
 	{ on = [ "s", "f" ], run = 'search fd --args="--hidden"', desc = "Search files"},
 	{ on = [ "s", "g" ], run = 'search rg --args="--hidden"', desc = "Search in files"},
