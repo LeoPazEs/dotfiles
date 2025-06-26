@@ -110,6 +110,8 @@ Se estiver no Ubuntu:
 - `nvim`
 - `ripgrep`
 - `lazygit`
+- `wget`
+- `luarocks`
 - `python-pipx`
 
 #### Fontes

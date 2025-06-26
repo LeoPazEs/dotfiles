@@ -30,7 +30,6 @@ return { -- Autoformat
       yaml = { 'yq' },
       yml = { 'yq' },
       go = { 'gofumpt', 'goimports', 'golines' },
-      cucumber = { 'reformat-gherkin' },
       typescript = { 'prettierd' },
       typescriptreact = { 'prettierd' },
       -- Conform can also run multiple formatters sequentially
