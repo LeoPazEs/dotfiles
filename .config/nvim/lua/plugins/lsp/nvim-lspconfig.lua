@@ -107,6 +107,41 @@ return { -- LSP Configuration & Plugins
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp').default_capabilities())
 
+    -- Ensure the servers and tools above are installed
+    --  To check the current status of installed tools and/or manually install
+    --  other tools, you can run
+    --    :Mason
+    --
+    --  You can press `g?` for help in this menu.
+    require('mason').setup()
+
+    -- You can add other tools here that you want Mason to install
+    -- for you, so that they are available from within Neovim.
+    local ensure_installed = {
+      -- Rust
+      'rust-analyzer',
+      -- C, C++
+      'clangd',
+      -- Golang
+      'gopls', -- LSP for Golang Code
+      'gofumpt', -- Formatter for Golang Code
+      'goimports', -- Formatter for Golang Code imports
+      'golines', -- Formatter for longlines in Golang Code
+      -- Lua
+      'lua_ls',
+      'stylua', -- Used to format Lua code
+      -- Python
+      -- pylsp-mypy is Managed by the :PylspInstall , -- Type Checking for Python code
+      'black',
+      'isort', -- Used to format imports Python Code
+      'python-lsp-server', -- LSP for flake8
+      -- YAML
+      'yq', -- Used to format YAML and YML files
+      -- Typescript
+      'prettierd',
+    }
+    require('mason-tool-installer').setup { ensure_installed = ensure_installed }
+
     -- Enable the following language servers
     --  Feel free to add/remove any LSPs that you want here. They will automatically be installed.
     --
@@ -121,90 +156,41 @@ return { -- LSP Configuration & Plugins
       local virtual = os.getenv 'VIRTUAL_ENV' or '/usr'
       return { '--python-executable', virtual .. '/bin/python3', true }
     end
-
-    local servers = {
-      rust_analyzer = {},
-      cucumber_language_server = {},
-      gopls = { settings = { gopls = { completeUnimported = true, usePlaceholders = true, analyses = { unusedparams = true } } } },
-      clangd = {},
-      pylsp = {
-        settings = {
-          pylsp = {
-            configurationSources = { 'flake8' },
-            plugins = {
-              flake8 = {
-                enabled = true,
-                ignore = {},
-                maxLineLength = 88,
-              },
-              -- pylsp_mypy = { enabled = true, overrides = extra_args(), report_progress = true, dmypy = true, follow_imports = 'normal', live_mode = false },
-              pylsp_mypy = { enabled = true, overrides = extra_args(), report_progress = true, follow_imports = 'normal', live_mode = false },
-              -- type checker
-              black = { enabled = false },
-              autopep8 = { enabled = false },
-              mccabe = { enabled = false },
-              pycodestyle = { enabled = false },
-              pyflakes = { enabled = false },
+    vim.lsp.config('pylsp', {
+      settings = {
+        pylsp = {
+          configurationSources = { 'flake8' },
+          plugins = {
+            flake8 = {
+              enabled = true,
+              ignore = {},
+              maxLineLength = 88,
             },
+            pylsp_mypy = { enabled = true, overrides = extra_args(), report_progress = true, follow_imports = 'normal', live_mode = false },
+            -- type checker
+            black = { enabled = false },
+            autopep8 = { enabled = false },
+            mccabe = { enabled = false },
+            pycodestyle = { enabled = false },
+            pyflakes = { enabled = false },
           },
         },
       },
-      lua_ls = {
-        settings = {
-          Lua = {
-            completion = {
-              callSnippet = 'Replace',
-            },
-          },
-        },
-      },
-    }
-
-    -- Ensure the servers and tools above are installed
-    --  To check the current status of installed tools and/or manually install
-    --  other tools, you can run
-    --    :Mason
-    --
-    --  You can press `g?` for help in this menu.
-    require('mason').setup()
-
-    -- You can add other tools here that you want Mason to install
-    -- for you, so that they are available from within Neovim.
-    local ensure_installed = vim.tbl_keys(servers or {})
-    vim.list_extend(ensure_installed, {
-      'rust-analyzer',
-      -- C, C++
-      'clangd',
-      -- Golang
-      'gopls', -- LSP for Golang Code
-      'gofumpt', -- Formatter for Golang Code
-      'goimports', -- Formatter for Golang Code imports
-      'golines', -- Formatter for longlines in Golang Code
-      -- Lua
-      'stylua', -- Used to format Lua code
-      -- Python
-      -- pylsp-mypy is Managed by the :PylspInstall , -- Type Checking for Python code
-      'black',
-      'isort', -- Used to format imports Python Code
-      'python-lsp-server', -- LSP for flake8
-      -- YAML
-      'yq', -- Used to format YAML and YML files
-      -- Typescript
-      'prettierd',
     })
-    require('mason-tool-installer').setup { ensure_installed = ensure_installed }
-
-    require('mason-lspconfig').setup {
-      handlers = {
-        function(server_name)
-          local server = servers[server_name] or {}
-          -- This handles overriding only values explicitly passed
-          -- by the server configuration above. Useful when disabling
-          -- certain features of an LSP (for example, turning off formatting for tsserver)
-          server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
-          require('lspconfig')[server_name].setup(server)
-        end,
+    vim.lsp.enable 'pylsp'
+    vim.lsp.enable 'rust_analyzer'
+    vim.lsp.config('gopls', { settings = { gopls = { completeUnimported = true, usePlaceholders = true, analyses = { unusedparams = true } } } })
+    vim.lsp.enable 'gopls'
+    vim.lsp.enable 'clangd'
+    vim.lsp.config('lua_ls', {
+      settings = {
+        Lua = {
+          completion = {
+            callSnippet = 'Replace',
+          },
+        },
       },
-    }
+    })
+    vim.lsp.enable 'lua_ls'
   end,
 }
