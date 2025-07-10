@@ -3,10 +3,9 @@ return { -- LSP Configuration & Plugins
   lazy = false,
   dependencies = {
     'williamboman/mason.nvim', -- NOTE: Must be loaded before dependants
-    'williamboman/mason-lspconfig.nvim',
     'WhoIsSethDaniel/mason-tool-installer.nvim',
     'j-hui/fidget.nvim',
-    'folke/neodev.nvim',
+    'folke/lazydev.nvim',
   },
   config = function()
     vim.api.nvim_create_autocmd('LspAttach', {
@@ -128,7 +127,7 @@ return { -- LSP Configuration & Plugins
       'goimports', -- Formatter for Golang Code imports
       'golines', -- Formatter for longlines in Golang Code
       -- Lua
-      'lua_ls',
+      'lua-language-server',
       'stylua', -- Used to format Lua code
       -- Python
       -- pylsp-mypy is Managed by the :PylspInstall , -- Type Checking for Python code
@@ -182,7 +181,7 @@ return { -- LSP Configuration & Plugins
     vim.lsp.config('gopls', { settings = { gopls = { completeUnimported = true, usePlaceholders = true, analyses = { unusedparams = true } } } })
     vim.lsp.enable 'gopls'
     vim.lsp.enable 'clangd'
-    vim.lsp.config('lua_ls', {
+    vim.lsp.config('lua-language-server', {
       settings = {
         Lua = {
           completion = {
