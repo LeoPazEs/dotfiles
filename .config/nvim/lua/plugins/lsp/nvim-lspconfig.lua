@@ -6,6 +6,7 @@ return { -- LSP Configuration & Plugins
     'WhoIsSethDaniel/mason-tool-installer.nvim',
     'j-hui/fidget.nvim',
     'folke/lazydev.nvim',
+    'nvim-lua/plenary.nvim',
   },
   config = function()
     vim.api.nvim_create_autocmd('LspAttach', {
@@ -140,6 +141,37 @@ return { -- LSP Configuration & Plugins
       'prettierd',
     }
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
+    -- Installing pylsp-mypy after python-lsp-server is installed
+    require('mason-registry'):on('package:install:success', function(pkg)
+      if pkg.name ~= 'python-lsp-server' then
+        return
+      end
+
+      local venv = vim.fn.stdpath 'data' .. '/mason/packages/python-lsp-server/venv'
+      local job = require 'plenary.job'
+      job
+        :new({
+          command = venv .. '/bin/pip',
+          args = {
+            'install',
+            '-U',
+            '--disable-pip-version-check',
+            'pylsp-mypy',
+          },
+          cwd = venv,
+          env = { VIRTUAL_ENV = venv },
+          on_exit = function()
+            print 'Finished installing pylsp modules.'
+          end,
+          on_start = function()
+            print 'Installing pylsp modules...'
+          end,
+          on_stderr = function(_, data)
+            print('stderr:', vim.inspect(data))
+          end,
+        })
+        :start()
+    end)
 
     -- Enable the following language servers
     --  Feel free to add/remove any LSPs that you want here. They will automatically be installed.
