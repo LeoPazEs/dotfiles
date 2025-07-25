@@ -213,7 +213,7 @@ return { -- LSP Configuration & Plugins
     vim.lsp.config('gopls', { settings = { gopls = { completeUnimported = true, usePlaceholders = true, analyses = { unusedparams = true } } } })
     vim.lsp.enable 'gopls'
     vim.lsp.enable 'clangd'
-    vim.lsp.config('clangd', { cmd = { 'clangd', '--fallback-style=webkit' } })
+    vim.lsp.config('clangd', { cmd = { 'clangd', '--fallback-style=webkit' }, init_options = { fallbackFlags = { '--std=c++20' } } })
     vim.lsp.config('lua-language-server', {
       settings = {
         Lua = {
