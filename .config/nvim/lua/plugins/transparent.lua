@@ -33,6 +33,7 @@ return {
         'TelescopeBorder',
         'TelescopePromptTitle',
         'TelescopePromptBorder',
+        'PMenu', -- nvim-cmp
       },
       extra_groups = { 'NormalFloat', 'NvimTreeNormal' },
       exclude_groups = {},
