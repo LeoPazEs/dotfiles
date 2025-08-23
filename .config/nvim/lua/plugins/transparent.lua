@@ -6,6 +6,7 @@ return {
       groups = {
         'Normal',
         'NormalNC',
+        'FloatBorder',
         'Comment',
         'Constant',
         'Special',
